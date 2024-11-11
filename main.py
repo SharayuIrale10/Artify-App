@@ -19,23 +19,12 @@ option = st.sidebar.selectbox(
 st.title("🎨 Artify: Unleashing Styling Through Image Transformation")
 
 # Conditional interface for the "Choose Transformation" option
+# Conditional interface for the "Choose Transformation" option
 if option == "Choose Transformation":
-    # Specify the local image paths
-    image_files = [
-        r"C:\hello\image_style_transfer\images\21.jpg",
-        r"C:\hello\image_style_transfer\images\22.jpg",
-    ]
-    
-    # Display images inside a column container
-    st.markdown(""" 
+    # Display a short and creative message
+    st.markdown("""
         <div style="display: flex; flex-direction: column; align-items: center;">
-    """, unsafe_allow_html=True)
-
-    # Loop through the image files and display them using Streamlit's st.image function
-    for img_file in image_files:
-        st.image(img_file, width=500)  # Increased the image width to 500px
-
-    st.markdown(""" 
+            <p style="font-size: 20px;">Welcome to Artify! 🌟 Where your images meet magic. Choose a transformation and watch your art come alive!</p>
         </div>
     """, unsafe_allow_html=True)
 
@@ -64,5 +53,4 @@ elif option == "OpenCV Processing":
     gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     # Display the processed image using Streamlit
-    st.image(rgb_image, caption="Processed with OpenCV (Grayscale)", use_column_width=True)
-
+    st.image(gray_image, caption="Processed with OpenCV (Grayscale)", use_column_width=True)
