@@ -1,6 +1,7 @@
 streamlit
 opencv-python==4.10.0.84
 tensorflow
+tensorflow-hub
 neural-style
 pillow
 numpy
