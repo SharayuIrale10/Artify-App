@@ -11,7 +11,7 @@ Artify is a Streamlit-based web application that enables users to apply various 
 
 ## Demo
 
-You can access the app online via Streamlit Community Cloud [here](add link once deployed).
+You can access the app online via Streamlit Community Cloud [here](https://sharayuirale10-artify-app-main-pyyrd0.streamlit.app/).
 
 ## Installation
 
